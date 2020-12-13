@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+#css, #webgl {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#css {
+  background: black;
+}
+
+#webgl {
+  pointer-events: none;
+}
+
+.input-container {
+  width: 100px;
+  height: 50px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.range-container {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 8px;
+  color: #fff;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* .slider:hover {
+  opacity: 1;
+} */
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #4C88E1;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #4C88E1;
+  cursor: pointer;
+}

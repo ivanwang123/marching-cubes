@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Sand Box</title>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet">
+        <link href="modestyles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="../js/three.js"></script>
+        <script src="../js/OrbitControls.js"></script>
+        <script src="../js/OBJLoader.js"></script>
+        <script src="../js/GLTFLoader.js"></script>
+        <script src="../js/BufferGeometryUtils.js"></script>
+        <script src="../js/FirstPersonControls.js"></script>
+        <script src="../js/FlyControls.js"></script>
+        <script src="../js/PointerLockControls.js"></script>
+        <!-- <script src="https://rawgithub.com/mrdoob/three.js/r104/examples/js/utils/BufferGeometryUtils.js"></script> -->
+        <script src="noisejs-master/perlin.js"></script>
+        <script src="triangulation.js" type="module"></script>
+
+        <div id="blocker">
+            <strong>Click to Start</strong>
+        </div>
+        <button class="back-btn" id="back-btn">Back</button>
+        <div id="info">
+            <p><b>WASD</b> move, <b>Space</b> jump, <b>Mouse</b> look around, <b>Esc</b> exit</p>
+        </div>
+        <div id="container">
+            <script src="sandbox.js" type="module"></script>
+        </div>
+
+    </body>
+</html>
